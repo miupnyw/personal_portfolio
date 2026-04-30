@@ -1,5 +1,5 @@
 <!-- declare HTML5 document type -->
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <!-- root element, language set to English -->
 <html lang="en">
 	<!-- document metadata section, not rendered on page -->
@@ -50,13 +50,21 @@
 						<input type="checkbox" id="theme-checkbox" onchange="toggleTheme(this.checked)">
 						<span class="switch-track"><span class="switch-knob"></span></span>
 					</label>
-	
+
 					<!-- mobile hamburger button -->
 					<button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
 						<span></span><span></span><span></span>
 					</button>
 				</div>
 			</nav>
+			<!-- mobile menu -->
+			<div class="mobile-menu" id="mobile-menu">
+				<a href="#about" onclick="closeMenu()">About</a>
+				<a href="#skills" onclick="closeMenu()">Skills</a>
+				<a href="#projects" onclick="closeMenu()">Projects</a>
+				<a href="#experience" onclick="closeMenu()">Experience</a>
+				<a href="#contact" onclick="closeMenu()">Contact</a>
+			</div>
 		</header>
 
 		<!-- main content section -->
@@ -101,7 +109,7 @@
 								is what drives me every day.
 							</p>
 							<p>
-								I enjoy working with teams, sharing knowledge, and helping others grow, and I’m always excited to learn new technologies and take on new challenges.
+								I enjoy working with teams, sharing knowledge, and helping others grow, and I'm always excited to learn new technologies and take on new challenges.
 							</p>
 							<p>Here are a few technologies I've been working with recently:</p>
 							<ul class="about-skills-list">
@@ -116,7 +124,7 @@
 						<div class="about-image-col">
 							<div class="about-photo-wrap">
 								<div class="about-photo">
-									<img src="images/avatar.png" alt="Miu's Avatar" class="about-image" />
+									<img src="images/avatar.png" alt="Miu's Avatar" />
 								</div>
 							</div>
 						</div>
@@ -191,9 +199,9 @@
 							<h3 class="timeline-role">Software Engineering</h3>
 							<p class="timeline-company">Yannix Co.,Ltd.</p>
 							<p class="timeline-desc">
-								Full-stack developer experienced in building ERP and chat applications 
-								using Python and Vue.js, with a focus on clean UI, 
-								performance optimization, and data visualization. 
+								Full-stack developer experienced in building ERP and chat applications
+								using Python and Vue.js, with a focus on clean UI,
+								performance optimization, and data visualization.
 								Skilled in API integration, testing, and maintaining scalable systems.
 							</p>
 						</div>
@@ -204,8 +212,8 @@
 							<h3 class="timeline-role">Frontend Developer</h3>
 							<p class="timeline-company">Muze Innovation Co.,Ltd.</p>
 							<p class="timeline-desc">
-								Fixed bugs and improved layouts in a React-based e-commerce app, 
-								enhancing responsiveness and delivering a consistent, 
+								Fixed bugs and improved layouts in a React-based e-commerce app,
+								enhancing responsiveness and delivering a consistent,
 								user-friendly UI across devices.
 							</p>
 						</div>
@@ -257,8 +265,8 @@
 		<footer>
 			<div class="footer-inner">
 				<div class="footer-socials">
-					<a href="https://github.com/" target="_blank" class="footer-social" title="GitHub">🐙</a>
-					<a href="https://linkedin.com/" target="_blank" class="footer-social" title="LinkedIn">💼</a>
+					<a href="https://github.com/miupnyw" target="_blank" class="footer-social" title="GitHub">🐙</a>
+					<a href="https://www.linkedin.com/in/miupnyw/" target="_blank" class="footer-social" title="LinkedIn">💼</a>
 					<a href="mailto:punyawee.miu@gmail.com" class="footer-social" title="Email">✉️</a>
 				</div>
 				<p class="footer-copy">
