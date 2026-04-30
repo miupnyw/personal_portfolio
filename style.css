@@ -632,11 +632,6 @@ nav {
 	align-items: start;
 }
 
-.contact-info p {
-	color: var(--muted);
-	margin-bottom: 32px;
-	line-height: 1.8;
-}
 
 .social-links {
 	display: flex;
