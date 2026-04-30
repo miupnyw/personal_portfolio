@@ -1,0 +1,106 @@
+<!-- declare HTML5 document type -->
+<!DOCTYPE html> 
+<!-- root element, language set to English -->
+<html lang="en">
+	<!-- document metadata section, not rendered on page -->
+	<head>
+		<!-- character encoding -->
+		<meta charset="UTF-8" />
+		<!-- viewport settings for responsive design -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<!-- page title -->
+		<title>Miu — Portfolio</title>
+
+		<!-- font links -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+
+		<!-- font crossorigin -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<!-- font styles -->
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+		<!-- stylesheet link -->
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<!-- document body section for rendering content -->
+	<body>
+		<!-- header section -->
+		<header>
+			<!-- navigation bar -->
+			<nav>
+				<!-- logo -->
+				<a href="#hero" class="nav-logo"><span>miu</span>.dev</a>
+
+				<!-- navigation links -->
+				<ul class="nav-links">
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#contact" class="nav-cta">Contact</a></li>
+				</ul>
+
+				<!-- mobile hamburger button -->
+				<button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+					hamburger menu
+				</button>
+			</nav>
+		</header>
+
+		<!-- main content section -->
+		<main>
+			<section id="hero">
+				<div class="hero-inner">
+					<div>
+						<p class="hero-greeting">// hello, world 👋</p>
+						<h1 class="hero-name">Hi, I'm Miu</h1>
+						<p class="hero-role">
+							<span class="highlight">Software Developer</span>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="about">
+				<div class="container">
+					<p class="section-label">// 01. about</p>
+					<h2 class="section-title">About Me</h2>
+				</div>
+			</section>
+			<section id="skills">
+				<div class="container">
+					<p class="section-label">// 02. skills</p>
+					<h2 class="section-title">Skills</h2>
+				</div>
+			</section>
+			<section id="projects">
+				<div class="container">
+					<p class="section-label">// 03. projects</p>
+					<h2 class="section-title">Projects</h2>
+				</div>
+			</section>
+			<section id="experience">
+				<div class="container">
+					<p class="section-label">// 04. experience</p>
+					<h2 class="section-title">Experience</h2>
+				</div>
+			</section>
+			<section id="contact">
+				<div class="container">
+					<p class="section-label">// 05. contact</p>
+					<h2 class="section-title">Contact</h2>
+				</div>
+			</section>
+		</main>
+
+		<!-- footer section -->
+		<footer>
+			<p>2026 Miu's Portfolio. All rights reserved.</p>
+		</footer>
+
+		<!-- script tags for JavaScript functionality -->
+		<script src="script.js"></script>
+	</body>
+</html>
