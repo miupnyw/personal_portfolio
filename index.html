@@ -22,7 +22,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
 
 		<!-- stylesheet link -->
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
 
 	<!-- document body section for rendering content -->
@@ -34,19 +34,27 @@
 				<!-- logo -->
 				<a href="#hero" class="nav-logo"><span>miu</span>.dev</a>
 
-				<!-- navigation links -->
-				<ul class="nav-links">
-					<li><a href="#about">About</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#experience">Experience</a></li>
-					<li><a href="#contact" class="nav-cta">Contact</a></li>
-				</ul>
+				<div class="nav-container">
+					<!-- navigation links -->
+					<ul class="nav-links">
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#contact" class="nav-cta">Contact</a></li>
+					</ul>
 
-				<!-- mobile hamburger button -->
-				<button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
-					hamburger menu
-				</button>
+					<!-- theme toggle switch -->
+					<label class="theme-switch" aria-label="Toggle theme">
+						<input type="checkbox" id="theme-checkbox" onchange="toggleTheme(this.checked)">
+						<span class="switch-track"><span class="switch-knob"></span></span>
+					</label>
+	
+					<!-- mobile hamburger button -->
+					<button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+						<span></span><span></span><span></span>
+					</button>
+				</div>
 			</nav>
 		</header>
 
@@ -60,7 +68,16 @@
 						<p class="hero-role">
 							<span class="highlight">Software Developer</span>
 						</p>
+						<p class="hero-bio">
+							Full stack software developer with 5 years of experience designing and building
+							applications.
+						</p>
+						<div class="hero-cta">
+							<a href="#projects" class="btn btn-primary">View My Work</a>
+							<a href="#contact" class="btn btn-outline">Get in Touch</a>
+						</div>
 					</div>
+					<div class="hero-avatar-placeholder">🧑‍💻</div>
 				</div>
 			</section>
 			<section id="about">
@@ -90,7 +107,7 @@
 			<section id="contact">
 				<div class="container">
 					<p class="section-label">// 05. contact</p>
-					<h2 class="section-title">Contact</h2>
+					<h2 class="section-title">Get In Touch</h2>
 				</div>
 			</section>
 		</main>
