@@ -8,9 +8,9 @@
 	--gold:       #d4a43e;
 	--ink:        #f0e8d8;
 	--muted:      #9a8a72;
+	--header-bg:  rgba(26, 18, 8, 0.88);
 	--radius:     12px;
 	--max-w:      1100px;
-	--header-bg:  rgba(26, 18, 8, 0.88);
 }
 
 [data-theme="light"] {
@@ -110,7 +110,7 @@ nav {
 	border: 1px solid var(--accent);
 	border-radius: 8px;
 	font-size: 0.85rem;
-	color: var(--accent) !important;
+	color: var(--gold) !important;
 	transition: background 0.2s, color 0.2s !important;
 }
 
@@ -307,7 +307,6 @@ nav {
 	height: 240px;
 	border-radius: 50%;
 	object-fit: cover;
-	border: 3px solid var(--rule);
 	box-shadow: 0 0 0 8px rgba(200,64,26,0.08), 0 24px 64px rgba(0,0,0,0.5);
 }
 
@@ -397,6 +396,13 @@ nav {
 	font-size: 4rem;
 }
 
+.about-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: var(--radius);
+}
+
 .skills-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -460,7 +466,6 @@ nav {
 .project-img {
 	width: 100%;
 	aspect-ratio: 16/9;
-	object-fit: cover;
 	background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 	display: flex;
 	align-items: center;
@@ -468,6 +473,14 @@ nav {
 	font-size: 3rem;
 	position: relative;
 	overflow: hidden;
+}
+
+.project-img img {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .project-img-overlay {
