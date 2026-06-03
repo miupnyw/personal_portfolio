@@ -2,6 +2,7 @@
 
 Personal portfolio website built with plain HTML, CSS, and vanilla JavaScript 
 — no frameworks or build tools required. Open `index.html` directly in a browser.
+🔗 **Live Demo:** [personal-portfolio.vercel.app](https://personal-portfolio-eta-pearl.vercel.app)
 
 ---
 
